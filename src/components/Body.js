@@ -1,14 +1,13 @@
 import React from 'react'
 import SideNavbar from './SideNavbar'
-import VideoContainer from './VideoContainer'
-import MainContainer from './MainContainer'
+import { Outlet } from 'react-router-dom'
 
 
 const Body = () => {
     return (
         <div className="grid grid-flow-col">
             <SideNavbar />
-            <MainContainer />
+            <Outlet />
         </div>
     )
 }
