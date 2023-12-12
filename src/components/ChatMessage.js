@@ -1,12 +1,15 @@
 import React from 'react'
 
-const ChatMessage = ({name, text}) => {
+const ChatMessage = ({ name, text }) => {
     return (
-        <div className="flex m-1">
-            <img width={ 30 } height={ 30 } alt="avatar" src="./avatar-2.jpeg" />
-            <div className="flex ml-1">
-            <span className="pr-1"><strong>{name}</strong></span>
-            <span className="pl-2">{text}</span>
+        <div className="flex ui-sans-serif">
+            <div className="w-10 h-10">
+                <img  alt="avatar" src="./avatar-2.jpeg" />
+            </div>
+
+            <div className="flex p-1">
+                <p className="p-1"><strong>{ name }</strong></p>
+                <p className="p-1">{ text }</p>
             </div>
 
         </div>
